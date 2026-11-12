@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:id="@+id/homeHeader"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_marginHorizontal="18dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/btnMenu"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="☰"
+            android:textColor="@color/coffee_dark"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="12dp"
+            android:contentDescription="Brewkery logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_brewkery_logo" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brewkery"
+                android:textColor="@color/coffee_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coffee • Bakery • Brews"
+                android:textColor="@color/text_secondary"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnSearch"
+            android:layout_width="36dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="⌕"
+            android:textColor="@color/coffee_dark"
+            android:textSize="29sp" />
+
+        <FrameLayout
+            android:id="@+id/btnCart"
+            android:layout_width="43dp"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="▢"
+                android:textColor="@color/coffee_dark"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tvHeaderCartCount"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_gravity="top|end"
+                android:background="@drawable/bg_cart_count"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/btnTheme"
+            android:layout_width="42dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="☾"
+            android:textColor="@color/coffee_dark"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <!-- PROMOTIONAL HERO BANNER -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/promoBanner"
+        android:layout_width="0dp"
+        android:layout_height="165dp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#35190F"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="5dp"
+        app:strokeWidth="0dp"
+        app:layout_constraintTop_toBottomOf="@id/homeHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEASONAL SPECIAL"
+                    android:textColor="#F4B66C"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Iced Caramel Latte"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:maxLines="2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="A perfect blend of rich espresso and smooth caramel."
+                    android:textColor="#FFF8F3"
+                    android:textSize="10sp"
+                    android:maxLines="2" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPromoOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Order Now  →"
+                    android:textAllCaps="false"
+                    android:textColor="@color/coffee_dark"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#F4B66C"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivPromo"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="5dp"
+                android:contentDescription="Featured iced coffee"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_brewkery_logo" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- BANNER INDICATORS -->
+    <LinearLayout
+        android:id="@+id/bannerIndicators"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/promoBanner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:layout_width="18dp"
+            android:layout_height="7dp"
+            android:background="@drawable/bg_indicator_active" />
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginStart="9dp"
+            android:background="@drawable/bg_indicator_inactive" />
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginStart="9dp"
+            android:background="@drawable/bg_indicator_inactive" />
+
+    </LinearLayout>
+
+    <!-- CATEGORY CARDS -->
+    <HorizontalScrollView
+        android:id="@+id/categoryScroll"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/bannerIndicators"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/categoryContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingHorizontal="14dp">
+
+            <!-- ALL -->
+            <LinearLayout
+                android:id="@+id/tvAllCategory"
+                android:layout_width="88dp"
+                android:layout_height="92dp"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/bg_category_selected"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="☕"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="All"
+                    android:textColor="@color/coffee_dark"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- HOT COFFEE -->
+            <LinearLayout
+                android:id="@+id/tvHotCoffee"
+                android:layout_width="88dp"
+                android:layout_height="92dp"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/bg_category_unselected"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="☕"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Hot Coffee"
+                    android:textColor="@color/coffee_dark"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- COLD BREWS -->
+            <LinearLayout
+                android:id="@+id/tvColdBrews"
+                android:layout_width="88dp"
+                android:layout_height="92dp"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/bg_category_unselected"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🥤"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Cold Brews"
+                    android:textColor="@color/coffee_dark"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- BAKERY -->
+            <LinearLayout
+                android:id="@+id/tvBakery"
+                android:layout_width="88dp"
+                android:layout_height="92dp"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/bg_category_unselected"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🥐"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Bakery"
+                    android:textColor="@color/coffee_dark"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- DESSERTS -->
+            <LinearLayout
+                android:id="@+id/tvDesserts"
+                android:layout_width="88dp"
+                android:layout_height="92dp"
+                android:background="@drawable/bg_category_unselected"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🍰"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Desserts"
+                    android:textColor="@color/coffee_dark"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- MENU HEADING -->
+    <TextView
+        android:id="@+id/tvMenuHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Our Menu"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/categoryScroll"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="View All  →"
+        android:textColor="@color/caramel"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/tvMenuHeading"
+        app:layout_constraintBottom_toBottomOf="@id/tvMenuHeading"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- PRODUCT LIST -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProducts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="13dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvMenuHeading"
+        app:layout_constraintBottom_toTopOf="@id/cartSummary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- STICKY CART BAR -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cartSummary"
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/coffee_dark"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="6dp"
+        app:strokeWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="17dp">
+
+            <TextView
+                android:id="@+id/tvCartCount"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_cart_count"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Bag"
+                    android:textColor="@color/checkout_button_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvCartTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$0.00"
+                    android:textColor="@color/checkout_button_text"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvCheckout"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:text="Proceed to Checkout  →"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/caramel"
+                app:cornerRadius="25dp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

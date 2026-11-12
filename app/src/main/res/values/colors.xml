@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brewkery Brand -->
+    <color name="coffee_dark">#35190F</color>
+    <color name="coffee_brown">#542A18</color>
+    <color name="coffee_medium">#824323</color>
+
+    <!-- Accent -->
+    <color name="caramel">#E95B16</color>
+    <color name="orange">#F47721</color>
+    <color name="golden">#F5B65C</color>
+
+    <!-- Background -->
+    <color name="cream">#FFF9F4</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_warm">#F9EFE6</color>
+
+    <!-- Text -->
+    <color name="text_primary">#28160F</color>
+    <color name="text_secondary">#8B776C</color>
+    <color name="checkout_button_text">#FFFFFF</color>
+
+    <!-- Other -->
+    <color name="divider">#EDE0D6</color>
+    <color name="success">#26845B</color>
+
+</resources>

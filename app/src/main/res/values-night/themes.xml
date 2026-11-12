@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="Base.Theme.Brewkery"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#FF8A50</item>
+        <item name="colorSecondary">#F6B96B</item>
+        <item name="android:statusBarColor">#1B100C</item>
+        <item name="android:navigationBarColor">#1B100C</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">#1B100C</item>
+
+    </style>
+
+    <style name="Theme.Brewkery" parent="Base.Theme.Brewkery" />
+
+</resources>
