@@ -336,8 +336,8 @@ The following areas are covered by the testing plan:
 | Deliverable | Link |
 |:---|:---|
 | GitHub Repository | [Brewkery Repository](https://github.com/HarshHarachkar/Brewkery) |
-| Debug APK | Add APK sharing link |
-| Screen Recording | Add recording link (optional) |
+| Debug APK | [Brewkery APK](https://drive.google.com/file/d/1dds28bDHXlB3yPopm1Fh23pE2tcWRKTr/view?usp=drivesdk) |
+| Screen Recording |[Brewkery Video](https://drive.google.com/file/d/1cDdW3q3X-TWbh4-dwwXMgQtvEfhbaoVc/view?usp=drivesdk) |
 
 ---
 
